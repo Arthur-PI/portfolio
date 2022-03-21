@@ -1,0 +1,74 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  z-index: 11;
+  padding: 0px 50px;
+  width: 100%;
+  height: var(--nav-height);
+  background-color: var(--navy);
+  backdrop-filter: blur(10px);
+  font-size: var(--fz-xl);
+  background-color: rgba(10, 25, 47, 0.85);
+  box-shadow: 0 10px 30px -10px var(--navy-shadow);
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo svg {
+  width: 42px;
+  height: 42px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  counter-reset: item;
+}
+
+.menu-links li {
+  margin: 0px 5px;
+  font-size: var(--fz-xs);
+  font-family: var(--font-mono);
+  color: var(--lightest-slate);
+}
+
+.menu-links li a {
+  padding: 10px;
+}
+
+.menu-links li a:hover {
+  color: var(--green);
+}
+
+.menu ol li a::before {
+  counter-increment: item;
+  content: "0" counter(item) ".";
+  margin-right: 5px;
+  color: var(--green);
+  font-size: var(--fz-xxs);
+  text-align: right;
+}
+
+.menu-resume {
+  font-size: var(--fz-xs);
+}
+
+.menu-resume a {
+  margin-left: 20px;
+}

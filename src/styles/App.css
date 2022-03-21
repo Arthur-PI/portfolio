@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  background-color: var(--navy);
+  color: var(--slate);
+  font-family: var(--font-sans);
+  font-size: var(--fz-xxl);
+  width: 100%;
+  height: 100%;
+  line-height: 1.3;
+  counter-reset: section;
+}
+
+#root {
+  min-height: 100vh;
+}

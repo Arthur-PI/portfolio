@@ -1,0 +1,38 @@
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0px;
+}
+
+.hero h1 {
+  color: var(--green);
+  font-size: var(--fz-md);
+  margin: 0px 0px 30px 4px;
+}
+
+.hero h2 {
+  font-size: clamp(40px, 8vw, 80px);
+}
+
+.hero h3 {
+  color: var(--slate);
+  font-size: clamp(30px, 6vw, 60px);
+  margin-top: 20px;
+}
+
+.hero p {
+  color: var(--slate);
+  font-size: var(--fz-md);
+  margin-top: 40px;
+  max-width: 540px;
+}
+
+.hero .github {
+  margin-top: 40px;
+  font-size: var(--fz-md);
+}

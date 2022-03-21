@@ -1,0 +1,53 @@
+.contact-section {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-title {
+  color: var(--green);
+  font-size: var(--fz-md);
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-family: var(--font-mono);
+  margin-bottom: 25px;
+}
+
+.contact-title::before {
+  bottom: 5px;
+  counter-increment: section 1;
+  content: "0" counter(section) ".";
+  margin-right: 10px;
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: var(--fz-md);
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+
+.contact-subtitle {
+  font-size: clamp(40px, 5vw, 60px);
+  line-height: auto;
+}
+
+.contact-section p {
+    font-size: var(--fz-xl);
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.contact-section textarea {
+    width: 350px;
+    height: 150px;
+    font-size: var(--fz-lg);
+    background-color: transparent;
+    border: 1px solid var(--green);
+    outline: none;
+    border-radius: 5px;
+    padding: 8px;
+    color: var(--lightest-slate);
+    resize: none;
+    margin-bottom: 25px;
+}

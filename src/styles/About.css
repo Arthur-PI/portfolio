@@ -1,0 +1,69 @@
+.section-title {
+  display: flex;
+  align-items: center;
+  margin: 10px 0px 40px;
+  width: 100%;
+  font-size: clamp(26px, 5vw, var(--fz-heading));
+}
+
+.section-title::before {
+  bottom: 5px;
+  counter-increment: section 1;
+  content: "0" counter(section) ".";
+  margin-right: 10px;
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: clamp(26px, 5vw, var(--fz-xl));
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: -3px;
+  width: 300px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: var(--lightest-navy);
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 50px;
+}
+
+.about-left p {
+  font-size: var(--fz-lg);
+  margin-bottom: 10px;
+}
+
+.about-left ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  gap: 0px 10px;
+  padding: 0px;
+  margin: 20px 0px 0px;
+  overflow: hidden;
+  list-style: none;
+}
+
+.about-left ul li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-family: var(--font-mono);
+  font-size: var(--fz-xs);
+}
+
+.about-left ul li::before {
+  content: "▹";
+  position: absolute;
+  top: 3px;
+  left: 0px;
+  color: var(--green);
+  font-size: var(--fz-sm);
+  line-height: 12px;
+}
